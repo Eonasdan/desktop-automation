@@ -1,10 +1,21 @@
-Adapated and improved from https://chrislayers.com/2021/08/01/scripting-winget/
+#What is this?
+
+When you have a fresh Windows 10/11 environment it can be annoying to install every SINGLE piece of software you need. 
+
+This powershell script will download the `install` and `uninstall` text files in this repo and run `winget` on each line of the install file and attempt to uninstall any Windows Store apps listed in the uninstall file.
+
+Elevated permissions are required to perform the uninstall.
+
+You are free to fork this repo and modify the in/uninstall files to your hearts content.
 
 
 
 
-Run:
+Run this from a powershell window
 ```bh
-#Run this from a powershell window
-iex "& { $(irm https://raw.githubusercontent.com/Eonasdan/desktop-automation/main/automate.ps1) } -url https://raw.githubusercontent.com/Eonasdan/desktop-automation/main -install"
+iex "& { $(irm https://raw.githubusercontent.com/Eonasdan/desktop-automation/main/automate.ps1) } -url https://raw.githubusercontent.com/Eonasdan/desktop-automation/main -install -uninstall"
 ```
+
+
+
+Adapted and improved from https://chrislayers.com/2021/08/01/scripting-winget/
