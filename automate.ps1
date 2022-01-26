@@ -1,16 +1,13 @@
-using namespace System.Net.Http
 param (
     [Parameter(Mandatory=$true)][string] $url,
-    [bool] $install = $True,
-    [boolean] $uninstall = $True
+    [switch] $install,
+    [switch] $uninstall
 )
 
-Clear-Host
+Add-Type -AssemblyName System.Net.Http
+#Clear-Host
 
 $httpClient = New-Object System.Net.Http.HttpClient
-
-
-#$url = "https://raw.githubusercontent.com/Eonasdan/desktop-automation/main";
 
 function Get-Stream{
     param(
