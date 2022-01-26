@@ -8,8 +8,10 @@ Elevated permissions are required to perform the uninstall.
 
 You are free to fork this repo and modify the in/uninstall files to your hearts content.
 
+## The command
+The `-url` argument is the base path for your install and uninstall files.
 
-
+You can provide one or both of `-install` and `-uninstall`. If you just provide `-install`, the uninstall section won't run.
 
 Run this from a powershell window
 ```bh
