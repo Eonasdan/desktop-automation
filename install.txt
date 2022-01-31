@@ -16,3 +16,4 @@ Notepad++.Notepad++
 Postman.Postman
 VideoLAN.VLC
 Microsoft.SQLServer.2019.Developer
+Microsoft.dotnetHostingBundle
