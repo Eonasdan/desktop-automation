@@ -18,3 +18,4 @@ VideoLAN.VLC
 Microsoft.SQLServer.2019.Developer
 Microsoft.SQLServerManagementStudio
 Microsoft.dotnetHostingBundle
+File-New-Project.EarTrumpet
